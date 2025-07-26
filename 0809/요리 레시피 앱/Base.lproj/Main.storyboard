@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZIq-3B-r8t">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="dwV-cN-cx7">
+            <objects>
+                <viewController id="uLn-Oz-Pie" customClass="ViewController" customModule="_______________" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9O4-J1-TtG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fKj-k4-kJR">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="요리 레시피" id="svw-cY-lqx"/>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="30t-UZ-aeK">
+                                <rect key="frame" x="20" y="187" width="334" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LrH-72-w2X">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="120"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0n-0v-nnl">
+                                                <rect key="frame" x="0.0" y="0.0" width="162" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="162" id="8Cl-5c-dDl"/>
+                                                    <constraint firstAttribute="height" constant="120" id="uOD-FN-HCH"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="image_1"/>
+                                                <connections>
+                                                    <segue destination="Akk-TY-F4x" kind="show" id="Pzr-tj-gT2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihm-mz-Ikk">
+                                                <rect key="frame" x="172" y="0.0" width="162" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="paq-0D-xPi"/>
+                                                    <constraint firstAttribute="width" constant="162" id="tv9-Gt-6Um"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="image_2"/>
+                                                <connections>
+                                                    <segue destination="Akk-TY-F4x" kind="show" id="IC3-h6-Kbz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wYi-vF-Yh2">
+                                        <rect key="frame" x="0.0" y="130" width="334" height="120"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TbR-co-N6u">
+                                                <rect key="frame" x="0.0" y="0.0" width="162" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="162" id="RQb-iS-gZp"/>
+                                                    <constraint firstAttribute="height" constant="120" id="bcT-5n-Zmf"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="image_3">
+                                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="Akk-TY-F4x" kind="show" id="EVv-VR-OcG"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCD-i2-cqP">
+                                                <rect key="frame" x="172" y="0.0" width="162" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="162" id="DmD-cH-aTw"/>
+                                                    <constraint firstAttribute="height" constant="121" id="ZsS-fI-KgD"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="image_4"/>
+                                                <connections>
+                                                    <segue destination="Akk-TY-F4x" kind="show" id="XsT-0K-xdf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="NxH-cX-NOV"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="v8T-hv-zVg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xFQ-iD-7et" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1356" y="117"/>
+        </scene>
+        <!--Recipe View Controller-->
+        <scene sceneID="yls-bX-tLT">
+            <objects>
+                <viewController id="Akk-TY-F4x" customClass="RecipeViewController" customModule="_______________" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="huQ-es-DVO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oRJ-uD-Ctw">
+                                <rect key="frame" x="67" y="58" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fOr-CQ-f7e">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="순두부찌개" id="dJq-xo-3kf"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bbe-Ok-CzH">
+                                <rect key="frame" x="67" y="320" width="240" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MNz-vd-Mft">
+                                <rect key="frame" x="67" y="446" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="bhk-fb-V0o"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="oRJ-uD-Ctw" id="WdO-GE-hhX"/>
+                        <outlet property="indegrantLable" destination="Bbe-Ok-CzH" id="n2c-we-24i"/>
+                        <outlet property="recipeTextView" destination="MNz-vd-Mft" id="aPZ-3v-81Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aHV-kL-mQo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2069.5999999999999" y="117.39130434782609"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Y7h-qu-RiW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZIq-3B-r8t" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ERV-Xn-faO">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uLn-Oz-Pie" kind="relationship" relationship="rootViewController" id="w13-9U-trq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AYO-Lb-qfn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="673" y="117"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image_1" width="992" height="828"/>
+        <image name="image_2" width="994" height="826"/>
+        <image name="image_3" width="994" height="828"/>
+        <image name="image_4" width="992" height="830"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="EVv-VR-OcG"/>
+    </inferredMetricsTieBreakers>
+</document>
